@@ -12,11 +12,14 @@
 
         <!-- Configurações do Hibernate -->
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
-        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.hbm2ddl.auto">create</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">true</property>
 
         <!-- Configuração de pacotes de entidades -->
         <mapping class="org.dev.ormjpa.model.entities.Pessoa" />
+        <mapping class="org.dev.ormjpa.model.entities.Passaporte" />
+        <mapping class="org.dev.ormjpa.model.entities.Departamento" />
+        <mapping class="org.dev.ormjpa.model.entities.Funcionario" />
     </session-factory>
 </hibernate-configuration>
